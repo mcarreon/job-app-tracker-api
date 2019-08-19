@@ -14,7 +14,7 @@ const checkPass = (hashedPass) => {
 export default [
   {
     path: "/user/join",
-    method: "post",
+    method: "put",
     handler: async (request, response) => {
       const { email, password } = request.body;
       const uuid = uuidv4();
@@ -29,17 +29,6 @@ export default [
           }
         });
       });
-
-      
-      
-      //console.log(request.body);
-      
-      // db.query('SELECT * FROM users', [], (err, res) => {
-      //   if (err) { response.send(500)}
-      //   else {
-      //     response.send(res.rows[0]);
-      //   }
-      // });
     }
   }
 ];
