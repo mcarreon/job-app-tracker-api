@@ -1,7 +1,8 @@
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import expressSession from 'express-session';
-import passport from 'passport';
+import passport from './passport';
+import express from 'express';
 
 export const handleBodyRequestParsing = (router) => {
   router.use(bodyParser.json());

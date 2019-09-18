@@ -5,4 +5,4 @@ import {
   handlePassport,
 } from "./common";
 
-export default [handleBodyRequestParsing, handleCookieParsing, handleExpressSession, handlePassport];
+export default [handleBodyRequestParsing, handleExpressSession, handlePassport];
